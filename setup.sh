@@ -57,5 +57,8 @@ installAPT "${aptArray[@]}"
 aptArray=(python3 python3-pip)
 installAPT "${aptArray[@]}"
 
+aptArray=("sealmindset/")
+gitClone "${aptArray[@]}"
+
 #pipArray=(reconf python-nmap)
 #installPIP "${pipArray[@]}"
