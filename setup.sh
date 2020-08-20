@@ -61,6 +61,7 @@ aptArray=("sealmindset/nmapAutomator" "vulnersCom/nmap-vulners" "rbsec/sslscan" 
 gitClone "${aptArray[@]}"
 
 cp /opt/nmap-vulners/vulners.nse /usr/share/nmap/scripts/
+ln -s /opt/nmapAutomator/nmapAutomator.sh /usr/local/bin/
 
 #pipArray=(reconf python-nmap)
 #installPIP "${pipArray[@]}"
