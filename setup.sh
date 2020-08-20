@@ -51,14 +51,16 @@ function installPIP() {
 
 ####> Not quite PTF, but its the tools I'm using 
 
-aptArray=(seclists curl enum4linux gobuster nbtscan nikto nmap onesixtyone oscanner smbclient smbmap smtp-user-enum snmp sslscan sipvicious tnscmd10g whatweb wkhtmltopdf)
-installAPT "${aptArray[@]}"
+#aptArray=(seclists curl enum4linux gobuster nbtscan nikto nmap onesixtyone oscanner smbclient smbmap smtp-user-enum snmp sslscan sipvicious tnscmd10g whatweb wkhtmltopdf)
+#installAPT "${aptArray[@]}"
 
-aptArray=(python3 python3-pip)
-installAPT "${aptArray[@]}"
+#aptArray=(python3 python3-pip)
+#installAPT "${aptArray[@]}"
 
-aptArray=("sealmindset/")
-gitClone "${aptArray[@]}"
+#aptArray=("sealmindset/nmapAutomator" "vulnersCom/nmap-vulners" "rbsec/sslscan" "sullo/nikto" "rezasp/joomscan" "wpscanteam/wpscan" "droope/droopescan" "ShawnDEvans/smbmap" "portcullislabs/enum4linux" "darkoperator/dnsrecon" "quentinhardy/odat")
+#gitClone "${aptArray[@]}"
+
+#cp nmap-vulners/vulners.nse /usr/share/nmap/scripts
 
 #pipArray=(reconf python-nmap)
 #installPIP "${pipArray[@]}"
