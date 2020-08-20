@@ -60,7 +60,7 @@ function installPIP() {
 aptArray=("sealmindset/nmapAutomator" "vulnersCom/nmap-vulners" "rbsec/sslscan" "sullo/nikto" "rezasp/joomscan" "wpscanteam/wpscan" "droope/droopescan" "ShawnDEvans/smbmap" "portcullislabs/enum4linux" "darkoperator/dnsrecon" "quentinhardy/odat")
 gitClone "${aptArray[@]}"
 
-cp nmap-vulners/vulners.nse /usr/share/nmap/scripts/
+cp /opt/nmap-vulners/vulners.nse /usr/share/nmap/scripts/
 
 #pipArray=(reconf python-nmap)
 #installPIP "${pipArray[@]}"
